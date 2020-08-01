@@ -4,16 +4,16 @@ description: the material experience for jekyll
 destination: jekyllbuild
 url: "https://axtran.github.io" #place url
 baseurl: "" #place folder name if site is served in subfolder
-permalink: :title/
+permalink: /:title/
 paginate: 8
-paginate_path: page/:num/
+paginate_path: /page/:num/
 infinite_scroll: true #change to false if you want to use pagination
 plugins: [jekyll-paginate] # plugins: replace gems
-tag_dir: tag
-category_dir: category
-author_dir: author
+tag_dir: /tag
+category_dir: /category
+author_dir: /author
 author_title_prefix: 'Posted by '
-media_folder: media/compressed
+media_folder: /media/compressed
 author_default_avatar: profile-pic.jpg
 tumblr: "#"
 pinterest: "#"
