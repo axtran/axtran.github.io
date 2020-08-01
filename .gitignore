@@ -7,3 +7,5 @@
 /jekyllbuild/
 /documentation/node_modules/
 /documentation/jekyllbuild/
+/.jekyll-cache/
+/.jekyll-metadata
