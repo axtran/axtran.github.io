@@ -6,11 +6,9 @@ node_modules/
 .brackets.json
 documentation/node_modules/
 documentation/jekyllbuild/
-_site
 .sass-cache
 .jekyll-cache/
 .jekyll-metadata
 npm-debug.log
 package.json
 gruntfile.js
-jekyllbuild/
