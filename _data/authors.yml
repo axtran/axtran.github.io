@@ -13,12 +13,8 @@
   id: someone
   name: Some Person
   avatar: /profile-pic.jpg
-  bio: this is some more information about the author.
-  facebook: https://www.facebook.com/someone
-  twitter: https://twitter.com/someone
-  instagram: http://instagram.com/someone
-  email: someone@something.com
+  
 -
   id: qatran
+  name: Q-A Tran
   avatar: /qa-pic.jpg
-  bio: ingénieur retraité

@@ -66,6 +66,7 @@
                             {% if page.tags %}
                             <span class="tags">
                                 <span class="name">tags:</span>
+                                <a href="{{ site.tag_dir | prepend: site.baseurl | replace: '//', '/' }}/">"#tags"</a>
                                 {% for tag in page.tags %}
                                     <a href="{{ site.tag_dir | prepend: site.baseurl | replace: '//', '/' }}/{{ tag }}">{{ tag }}</a>
                                 {% endfor %}
