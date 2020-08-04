@@ -1,7 +1,7 @@
 ---
 layout: tag_index
-tag: image
-title: tag image
+tag: quote
+title: tag quote
 ---
 
 {% include tag_list.html %}

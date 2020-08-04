@@ -1,7 +1,7 @@
 ---
 layout: tag_index
-tag: soundcloud
-title: tag soundcloud
+tag: classic
+title: tag classic (music)
 ---
 
 {% include tag_list.html %}

@@ -1,7 +1,7 @@
 ---
 layout: tag_index
-tag: video
-title: tag video
+tag: language
+title: tag language
 ---
 
 {% include tag_list.html %}

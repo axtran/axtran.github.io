@@ -1,7 +1,7 @@
 ---
 layout: tag_index
-tag: text
-title: tag text
+tag: literature
+title: tag literature
 ---
 
 {% include tag_list.html %}

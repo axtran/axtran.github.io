@@ -1,7 +1,7 @@
 ---
 layout: tag_index
-tag: youtube
-title: tag youtube
+tag: life
+title: tag life
 ---
 
 {% include tag_list.html %}

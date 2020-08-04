@@ -4,8 +4,8 @@ layout: page-material-sidebar-left
 type: youtube
 yt-video-id: A4ttu71oJ70 
 homedisplay: iframe
-title: Hang Truong
-tags: [video, iframe]
+title: TT Hằng Trường
+tags: [life, quote]
 category: [video]
 ---
 Youtube A4ttu71oJ70 is the "Càn Khôn Thập Linh" from TT Thích Hàng-Trường
@@ -17,11 +17,3 @@ For a YouTube video, no embedding code is required, it all works through the vid
 Taiji finale: D2W605JFCTU
 Rika Usami:   iiiznDpoapQ finale
 Rika Usami 2: wtRdASRK-Qo kushanku
-```yml
----
-layout: page-material-sidebar-left
-type: youtube
-yt-video-id: A4ttu71oJ70 
-homedisplay: iframe
----
-```

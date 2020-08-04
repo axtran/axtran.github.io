@@ -11,7 +11,7 @@
 
 -
   id: someone
-  name: Some Person
+  bio: Some Person
   avatar: /profile-pic.jpg
   
 -
