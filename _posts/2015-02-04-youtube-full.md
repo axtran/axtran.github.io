@@ -1,6 +1,6 @@
 ---
 author: qatran
-layout: post-full
+layout: page-material-sidebar-left
 type: youtube
 yt-video-id: A4ttu71oJ70 
 homedisplay: iframe
@@ -19,7 +19,7 @@ Rika Usami:   iiiznDpoapQ finale
 Rika Usami 2: wtRdASRK-Qo kushanku
 ```yml
 ---
-layout: post-full
+layout: page-material-sidebar-left
 type: youtube
 yt-video-id: A4ttu71oJ70 
 homedisplay: iframe
