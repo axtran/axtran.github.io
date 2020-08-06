@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}   
+    </head>
+    <body class="index has-material-sidebar-left">
+        {% include login_form.html %}
+        {% include footer.html %}
+        {% if site.infinite_scroll == true %}
+            <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/infinite.min.js"></script>
+        {% endif %}
+    </body>
+    
+    
+</html>
