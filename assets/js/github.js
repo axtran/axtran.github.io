@@ -2,15 +2,15 @@ const org = 'axtran';
 const repo = 'private-gridster';
 const branch = 'gh-pages-private';
 const page = '_site/index.html';
-document.writeln('init ok:'+org+'/'+repo+'/'+page+'?ref='+branch+'**');
+
 
 function onSubmit(form) {
-  document.writeln("onsubmit start!\n");
+  
   // step 1
   const login = form.username || form.querySelector('#login').value;
   const password = form.token || form.querySelector('#password').value;
   
-  //document.writeln('submit started:/repos/'+org+'/'+repo+'/contents/'+page+'*step 1*');
+  
   //const token = btoa(`${login}:${password}`);
   
   //#`https://api.github.com/repos/${org}/${repo}/contents/${page}?ref=${branch}`,
@@ -30,12 +30,13 @@ function onSubmit(form) {
       },
     });
 
-  document.writeln('request:'+request+'*2*');
+  
   fetch(request)
     .then(function (response) {
-      //document.writeln('status:'+response.status+'*3*');
+  
       if (response.status !== 200) {                   // step 4 200
-        document.querySelector('#loginForm').innerHTML = `Failed to load document (status: ${response.status})`;
+        document.writeln("github request failed! ***");
+        //document.querySelector('#loginForm').innerHTML = `Failed to load document (status: ${response.status})`;
       } else {
         response.json()
           .then(function (json) {                       // step 5
