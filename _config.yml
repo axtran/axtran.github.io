@@ -48,7 +48,7 @@ kramdown:
   syntax_highlighter: rouge
 relative_permalinks: false
 exclude: [.git, .gitignore, sass, .sass-cache, package.json, 
-           gruntfile.js, node_modules, README.md] #, _site]
+           gruntfile.js, node_modules, README.md, _site]
 
 # prose.io configurations
 prose:
