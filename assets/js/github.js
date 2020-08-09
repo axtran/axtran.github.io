@@ -1,15 +1,17 @@
 const org = 'axtran';
 const repo = 'private-gridster';
 const branch = 'gh-pages-private';
-const page = '_site/index.html';
-
-
+const base = '_site';
+const path =  window.location.pathname ;
+const file = 'index.html';
+const page = `${base}${path}${file}`;
+document.writeln("pathname: "+page);
 function onSubmit(form) {
   
   // step 1
   const login = form.username || form.querySelector('#login').value;
   const password = form.token || form.querySelector('#password').value;
-  
+  //const page = window.location.pathname;
   
   //const token = btoa(`${login}:${password}`);
   
