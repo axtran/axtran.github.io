@@ -41,7 +41,7 @@ function onSubmit(form) {
         response.json()
           .then(function (json) {                       // step 5
             const content = json.encoding === 'base64' ? atob(json.content) : json.content;
-            const startIdx = content.indexOf('<body class="index has-material-sidebar-left');  // step 6
+            const startIdx = content.indexOf('<body');  // step 6
             document.body.innerHTML = content.substring(
                 content.indexOf('>', startIdx) + 1,
                 content.indexOf('</body>'));

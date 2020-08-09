@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        {% include head.html %}   
+        {% include head.html %} 
+        <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/global.min.js"></script>
+        {% if site.infinite_scroll == true %}
+        <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/infinite.min.js"></script>
+        {% endif %}
     </head>
     <body class="index has-material-sidebar-left">
         
         {% include login_form.html %}
-    
         <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/global.min.js"></script>
-        {% if site.infinite_scroll == true %}
-            <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/infinite.min.js"></script>
-        {% endif %}
+        <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/infinite.min.js"></script>
     </body>
 </html>
