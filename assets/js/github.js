@@ -5,20 +5,20 @@ const base = '_site';
 const path =  window.location.pathname ;
 const file = 'index.html';
 const page = `${base}${path}${file}`;
-document.writeln("pathname: "+page);
+//# document.writeln("pathname: "+page);
 function onSubmit(form) {
   
   // step 1
   const login = form.username || form.querySelector('#login').value;
   const password = form.token || form.querySelector('#password').value;
-  //const page = window.location.pathname;
+  
   
   //const token = btoa(`${login}:${password}`);
   
   //#`https://api.github.com/repos/${org}/${repo}/contents/${page}?ref=${branch}`,
   
   // step 2
-  //# Authorization: `token ${token}`
+  //# Authorization: `token ${token}` # no more Basic authorization past 2020 nov
   
   const request = new Request(
     
@@ -37,8 +37,9 @@ function onSubmit(form) {
     .then(function (response) {
   
       if (response.status !== 200) {                   // step 4 200
-        //document.writeln("github request failed! ***");
+        
         document.querySelector('#loginForm').innerHTML = `Failed to load document (status: ${response.status})`;
+        
       } else {
         response.json()
           .then(function (json) {                       // step 5

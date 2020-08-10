@@ -23,14 +23,16 @@ author_dir: /author # /author
 author_title_prefix: 'id: '
 media_folder: /media/compressed
 author_default_avatar: /profile-pic.jpg
-tumblr: "#"
-pinterest: "#"
+tumblr: "/page-private"
+pinterest: "/page-public"
 instagram: "#"
 twitter: "#"
 facebook: "#"
 youtube: "#"
 vimeo: "#"
 soundcloud: "#"
+login: "/page-private"
+logout: "/page-public"
 
 encoding: utf-8
 defaults:
