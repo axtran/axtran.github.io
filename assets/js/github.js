@@ -33,21 +33,20 @@ function onSubmit(form) {
     });
 
   
-  fetch(request)
-    .then(function (response) {
+    fetch(request)
+    .then(async function (response) {
   
       if (response.status !== 200) {                   // step 4 200
-        
         document.querySelector('#loginForm').innerHTML = `Failed to load document (status: ${response.status})`;
-        
+        return;
       } else {
-        response.json()
-          .then(function (json) {                       // step 5
-            const content = json.encoding === 'base64' ? atob(json.content) : json.content;
+        await response.json()
+          .then(async function (json) {                       // step 5
+            const content = json.encoding === 'base64' ?   atob(json.content) :  json.content;
             const startIdx = content.indexOf('<body');  // step 6
-            document.body.innerHTML = content.substring(
-                content.indexOf('>', startIdx) + 1,
-                content.indexOf('</body>'));
+            document.body.innerHTML =  await content.substring(
+                await content.indexOf('>', startIdx) + 1,
+                await content.indexOf('</body>'));
             localStorage.setItem('githubPagesAuth', JSON.stringify({username: login, token: password }));
           });
       }
