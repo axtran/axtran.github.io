@@ -8,7 +8,10 @@
         {% endif %}
     </head>
     <body class="index has-material-sidebar-left">
-        
+        <header class="head">
+           {% include nav.html %}
+        </header>
+        {% include search.html %}
         {% include login_form.html %}
         <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/global.min.js"></script>
         <script src="{{ site.baseurl | replace: '//', '/' }}/js/build/infinite.min.js"></script>

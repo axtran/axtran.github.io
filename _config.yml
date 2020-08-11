@@ -24,13 +24,13 @@ author_title_prefix: 'id: '
 media_folder: /media/compressed
 author_default_avatar: /profile-pic.jpg
 tumblr: "/page-private"
-pinterest: "/page-public"
-instagram: "#"
+pinterest: "/page-private"
+instagram: "/page-private"
 twitter: "#"
 facebook: "#"
-youtube: "#"
-vimeo: "#"
-soundcloud: "#"
+youtube: "/page-public"
+vimeo: "/page-public"
+soundcloud: "/page-public"
 login: "/page-private"
 logout: "/page-public"
 
